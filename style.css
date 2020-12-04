@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: linear-gradient(to right, blue, white);
+}
+.clocks {
+  width: 510px;
+  height: 510px;
+  background: #ffffff;
+  z-index: -500;
+  border-radius: 250px;
+  position: relative;
+  font-size: 22px;
+}
+.number {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+
+  text-align: center;
+}
+.number1 {
+  transform: rotate(30deg);
+  transform-origin: center;
+  z-index: 100;
+}
+.number2 {
+  transform: rotate(60deg);
+  transform-origin: center;
+  z-index: 100;
+}
+.number3 {
+  transform: rotate(90deg);
+  z-index: 100;
+}
+.number4 {
+  transform: rotate(120deg);
+  z-index: 100;
+}
+.number5 {
+  transform: rotate(150deg);
+  z-index: 100;
+}
+.number6 {
+  transform: rotate(180deg);
+  z-index: 100;
+}
+.number7 {
+  transform: rotate(210deg);
+  z-index: 100;
+}
+.number8 {
+  transform: rotate(240deg);
+  z-index: 100;
+}
+.number9 {
+  transform: rotate(270deg);
+  z-index: 100;
+}
+.number10 {
+  transform: rotate(300deg);
+  z-index: 100;
+}
+.number11 {
+  transform: rotate(330deg);
+  z-index: 100;
+  transform-origin: center;
+}
+.number12 {
+  transform: rotate(360deg);
+  z-index: 100;
+}
+.second {
+  width: 5px;
+  height: 250px;
+  position: absolute;
+  left: 247.5px;
+  --rotation: 330;
+  transform: rotate(calc(var(--rotation) * 1deg));
+  transform-origin: bottom;
+}
+.halb_mound {
+  width: 25px;
+  border-radius: 12.5px;
+  height: 25px;
+  background: orchid;
+  position: relative;
+  left: -11.5px;
+}
+.haur {
+  --rotation: 60;
+  width: 14px;
+  height: 200px;
+  background: crimson;
+  position: absolute;
+  top: 50px;
+  left: 243px;
+  transform: rotate(calc(var(--rotation) * 1deg));
+  transform-origin: bottom;
+}
+.minute {
+  --rotation: 90;
+  width: 14px;
+  height: 220px;
+  top: 30px;
+  background: darkblue;
+  transform: rotate(calc(var(--rotation) * 1deg));
+  position: absolute;
+  transform-origin: bottom;
+  left: 243px;
+}
+.center_circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: black;
+  position: absolute;
+  top: 225px;
+  left: 225px;
+  z-index: 200;
+}
